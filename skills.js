@@ -2,23 +2,25 @@
    SKILLS
    ============================================================ */
 const SKILL_GROUPS = [
-  { title: 'Game Development & Engines', items: ['Unity 2D/3D', 'C# / .NET', 'ECS / DOTS', 'Burst & Jobs System', 'ScriptableObjects', 'Addressables & Asset Bundles', 'Prefabs & Scene Management', 'Input System', 'URP / HDRP', 'Cinemachine', 'Animation Systems', 'UI (uGUI / UI Toolkit / IMGUI)', 'Physics 2D/3D', 'DoTween', 'Godot'] },
-  { title: 'Systems, Pipelines & Automation', items: ['CI/CD (Jenkins, GitHub Actions)', 'Build Pipelines', 'Editor Scripting & Custom Tools', 'IL2CPP / AOT / Code Stripping', 'Native Plugin Development', 'Automated & Unit Testing', 'Python & Shell Scripting', 'Internal Framework Development'] },
+  { title: 'Game Development & Engines', items: ['Unity 2D/3D', 'C# / .NET', 'ECS / DOTS', 'Burst & Jobs System', 'ScriptableObjects', 'Addressables & Asset Bundles', 'Prefabs & Scene Management', 'Input System', 'URP / HDRP', 'Cinemachine', 'Unity Timeline', 'Animation Systems', 'Inverse Kinematics (IK)', 'UI (uGUI / UI Toolkit / IMGUI)', 'Physics 2D/3D', 'DoTween', 'Godot', 'GDScript'] },
+  { title: 'Systems, Pipelines & Automation', items: ['CI/CD (Jenkins, GitHub Actions)', 'Build Pipelines', 'Editor Scripting & Custom Tools', 'IL2CPP / AOT / Code Stripping', 'Native Plugin Development', 'Steam SDK Integration', 'Automated & Unit Testing', 'Python & Shell Scripting', 'Internal Framework Development'] },
   { title: 'Multiplayer & Backend', items: ['Photon / Photon Fusion', 'Nakama', 'Netcode & Network Programming', 'Client-Server Architecture', 'REST APIs', 'TCP / UDP / Sockets', 'Firebase', 'Telemetry (Adjust, AppLovin, Unity Ads)', 'LiveOps'] },
-  { title: 'Architecture & Engineering', items: ['Design Patterns & SOLID', 'Dependency Injection', 'Composition over Inheritance', 'MVC / MVP', 'Multithreading & async/await', 'Serialization (JSON / XML / Protobuf / YAML)', 'Performance Profiling & Optimization', 'Memory Management'] },
-  { title: 'Beyond Unity', items: ['PHP', 'JavaScript / HTML / CSS', 'SQL / MySQL', 'LAMP Stack', 'Cloud Basics (AWS / GCP / Azure)', 'Version Control (Git, Perforce, Plastic SCM)'] },
+  { title: 'Architecture & Engineering', items: ['Design Patterns & SOLID', 'Dependency Injection', 'Composition over Inheritance', 'Object Pooling', 'MVC / MVP', 'Multithreading & async/await', 'Serialization (JSON / XML / Protobuf / YAML)', 'Performance Profiling & Optimization', 'Memory Management'] },
+  { title: 'Beyond Unity', items: ['PHP', 'JavaScript / HTML / CSS', 'TypeScript', 'SQL / MySQL', 'LAMP Stack', 'Cloud Basics (AWS / GCP / Azure)', 'Version Control (Git, Perforce, Plastic SCM)'] },
   { title: 'Ways of Working', items: ['Agile / Scrum', 'Technical Leadership & Mentoring', 'Cross-Functional Collaboration', 'Documentation', 'Rapid Prototyping'] },
 ];
 
 const EXTRA_KEYWORDS = [
   'Assembly Definitions (asmdef)', 'Remote Config', 'PlayerPrefs', 'LOD', 'Navmesh & Pathfinding',
   'Finite State Machines (FSM)', 'Behaviour Trees', 'Decision Trees', 'Event-Driven Programming',
-  'A/B Testing', 'Inversion of Control (IoC)', 'UniTask / UniRx', 'WebSockets', 'AWS Lambda',
-  'AWS Lightsail', 'WPF', 'PL/SQL', 'MariaDB', 'SQLite', 'Asset & Content Pipelines',
-  'Frame Debugger & Deep Profiling', 'Mobile Performance Optimization', 'Legacy Code Modernization',
+  'Reactive Programming', 'A/B Testing', 'Inversion of Control (IoC)', 'UniTask / UniRx', 'WebSockets',
+  'Message Queueing', 'AWS Lambda', 'AWS Lightsail', 'WPF', 'PL/SQL', 'MariaDB', 'SQLite',
+  'Asset & Content Pipelines', 'Property Drawers', 'Frame Debugger & Deep Profiling',
+  'Mobile Performance Optimization', 'Legacy Code Modernization', 'Custom Logging Systems',
   'Technical Debt Reduction', 'Extraction Shooter', 'Hybrid Casual', 'Turn-Based & Real-Time Systems',
   'Graph Theory & Matrices', 'Trigonometry', 'Cross-Platform (Mobile/PC/Console)', 'Requirement Analysis',
   'Risk Assessment', 'Code Review & Git Flow', 'Package Creation', 'Video & Audio Mixer Systems',
+  '3Cs (Character/Camera/Controls)', 'Project Management Tools (Trello, ClickUp, Miro, Airtable)',
 ];
 
 // Synonym map so a search for how people actually phrase things ("unity3d",
@@ -42,6 +44,18 @@ const SKILL_SYNONYMS = {
   'Physics 2D/3D': ['physics', 'physics2d', 'physics3d', 'physics 2d', 'physics 3d', 'collision', 'collision2d', 'collision3d', 'physics engine'],
   'DoTween': ['dotween', 'tween', 'tweening'],
   'Godot': ['godot engine'],
+  'GDScript': ['gd script', 'godot script'],
+  'Unity Timeline': ['timeline', 'cutscene tool'],
+  'Inverse Kinematics (IK)': ['ik', 'inverse kinematics'],
+  'TypeScript': ['ts', 'type script'],
+  'Object Pooling': ['object pool', 'pooling'],
+  'Steam SDK Integration': ['steam sdk', 'steamworks'],
+  'Message Queueing': ['message queue', 'msg queue'],
+  'Property Drawers': ['property drawer'],
+  'Reactive Programming': ['reactive', 'rx programming'],
+  'Custom Logging Systems': ['logging system', 'custom logger'],
+  '3Cs (Character/Camera/Controls)': ['3cs', 'character camera controls'],
+  'Project Management Tools (Trello, ClickUp, Miro, Airtable)': ['trello', 'clickup', 'miro', 'airtable', 'project management tools'],
   'CI/CD (Jenkins, GitHub Actions)': ['devops', 'ci', 'cd', 'ci/cd', 'ci cd', 'ci/cd pipelines', 'continuous integration', 'continuous delivery', 'continuous deployment', 'build automation', 'deployment', 'jenkins', 'github actions', 'github workflows'],
   'Build Pipelines': ['build pipeline', 'build systems', 'build system', 'asset pipelines', 'content pipelines'],
   'Editor Scripting & Custom Tools': ['editor scripting', 'unity editor scripts', 'unity editor tools', 'custom editors', 'custom editor', 'tools development', 'tool development', 'developer tools', 'tooling'],

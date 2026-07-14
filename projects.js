@@ -52,7 +52,7 @@ const FEATURED_PROJECTS = [
     desc: 'A browser game solo-built and published on itch.io, featured on the front page for two weeks with ongoing player engagement.',
     tags: ['Web', 'Solo Dev'],
     thumb: 'assets/projects/btc-king.jpg',
-    links: [{ icon: 'fa-brands fa-itch-io', label: 'itch.io', url: 'https://aklgupta.itch.io' }]
+    links: [{ icon: 'fa-brands fa-itch-io', label: 'itch.io', url: 'https://aklgupta.itch.io/btc-king' }]
   },
   {
     id: 'proj-lighthouse', name: 'The Lighthouse', status: 'dev',
@@ -79,12 +79,12 @@ const MORE_PROJECTS = [
   { name: 'Rogue Planets', status: 'proto', desc: 'Upcoming action roguelike for PC/Steam/GOG — planned as the first title of an indie studio I intend to launch in Jan 2027. Currently pre-production.' },
   { name: 'Pickuiz', status: 'released', desc: "Image-based Android quiz app with a LAMP backend, built as a college final-year project — worked around an early Unity version's lack of native gallery upload." },
   { name: 'Boxes of Trouble', status: 'released', desc: 'Infinite-runner style Android game, published on Google Play.', link: 'https://aklgupta.itch.io/boxes-of-trouble' },
-  { name: 'Custom XML Builder', status: 'tool', desc: 'In-house Unity developer tool for XML authoring.' },
-  { name: 'Music Manager', status: 'tool', desc: 'Custom Windows utility built in Unity to manage audio files.' },
-  { name: 'EOD', status: 'dev', desc: 'Tetris meets base-building with resource management, in Godot.' },
-  { name: 'BaseTD', status: 'dev', desc: 'Upcoming tower-defense / base-defense game for PC, in Godot.' },
-  { name: 'Space Invader Clone', status: 'experimental', desc: 'PC game with multiple modes, built in GameMaker to learn the engine.' },
-  { name: 'Web PM Tool', status: 'dev', desc: 'Browser-based project management tool on the LAMP stack (ongoing).' },
-  { name: 'CSS Generator', status: 'experimental', desc: 'Browser-based WYSIWYG CSS generator, built in JavaScript.' },
-  { name: 'TwineJS Fork', status: 'experimental', desc: 'Forked the open-source TwineJS engine and added several new features.' },
+  { name: 'Custom XML Builder', status: 'tool', desc: 'Standalone Unity application for authoring XML — a personal internal dev tool.' },
+  { name: 'Music Manager', status: 'tool', desc: 'Personal Windows utility built in Unity to manage audio/music files, including reading audio format metadata directly in C#.' },
+  { name: 'EOD', status: 'proto', desc: 'Tetris meets base-building with resource management, for web and PC — built in Godot (GDScript/C#), currently on hiatus.', link: 'https://himaghnam.itch.io/eod' },
+  { name: 'BaseTD', status: 'proto', desc: 'Tower-defense / base-defense game for PC, web, and mobile — built in Godot (GDScript/C#), currently on hiatus.' },
+  { name: 'Space Invader Clone', status: 'experimental', desc: 'Homage to classic Space Invaders for PC, with 100 levels and an endless mode — built in GameMaker to learn the engine.' },
+  { name: 'Web PM Tool', status: 'tool', desc: 'Personal project-management tool (LAMP/jQuery) with hierarchical tasks and statuses, built after existing free tools fell short.' },
+  { name: 'CSS Generator', status: 'experimental', desc: 'Browser-based WYSIWYG CSS generator, built in JavaScript as a college project.' },
+  { name: 'TwineJS Fork', status: 'experimental', desc: 'Forked the open-source TwineJS engine, adding tag support and colored nodes.' },
 ];

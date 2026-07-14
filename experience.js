@@ -24,7 +24,7 @@ const TIMELINE = [
     focus: ['Engineering', 'Automation'],
     lines: ['Built 8–10 CRM modules as the sole backend developer (PHP/LAMP), including an email module that let users manage Gmail/Outlook/etc. accounts directly inside the CRM, built end-to-end', 'Unprompted, built a PHP templating engine to replace repetitive DB→BE→FE mapping and duplicated validation logic, cutting backend work by roughly 30%', 'The templating work and email module put me on a fast-track toward leading the tech team — before I moved on'] },
   { id: 'exp-7', dates: 'Feb — Mar 2016', role: 'Software Engineer (Intern)', company: 'Teamhood · Google Campus', loc: 'Madrid (Remote)',
-    focus: ['Engineering'], lines: ['Contributed as a software engineer during an early-career internship'] },
+    focus: ['Engineering'], lines: ['Remote intern for a small Google Campus (Madrid) team building a collaboration tool with collaborative video/PDF annotation', 'Ported a legacy PDF-annotation tool to an entirely new language and library stack from the ground up'] },
   { id: 'exp-8', dates: 'May — Jun 2015', role: 'Full-Stack Developer (Intern)', company: 'Sanjeev Verma Associates', loc: 'Delhi',
-    focus: ['Engineering'], lines: ['First professional experience, working full-stack across a small web application'] },
+    focus: ['Engineering'], lines: ["Solo freelance-style engagement for an architectural firm: built their portfolio website plus a GUI admin portal", "The admin portal let non-technical staff add new projects without touching code — my first professional exposure to building tools for non-engineers"] },
 ];
