@@ -1,0 +1,30 @@
+/* ============================================================
+   EXPERIENCE (condensed timeline)
+   ============================================================ */
+const TIMELINE = [
+  { id: 'exp-0', dates: 'Jun 2024 — Present', role: 'Senior Technical Lead', company: 'Aristocrat Leisure', loc: 'Noida',
+    focus: ['Automation & Tooling', 'Leadership'],
+    lines: ['Initiated and led a 5-person effort building an internal Unity framework — templating, plugin system, and gameplay APIs — to cut repetitive setup work across future titles', 'Contributed to 7+ social slot titles and led one end-to-end, before the studio was shut down in Dec 2025 and I transferred to a new team building iGaming slots', 'Mentor junior developers, run milestone planning, and drive code review and workflow improvements across the team'] },
+  { id: 'exp-1', dates: 'Oct 2023 — Jun 2024', role: 'Senior Unity Developer', company: 'Studio Sirah', loc: 'Bengaluru',
+    focus: ['Game Development', 'Automation & Tooling'],
+    lines: ['Shipped 10+ features & internal tools for a cross-platform multiplayer game (Windows / Android / iOS) — UI and gameplay', 'Built three connected pipelines — asset validation, on-demand builds, and a merge-triggered QA automation bot with AWS Athena logging', 'Built a pricing-automation tool that replaced a 2–3 day manual IAP pricing spreadsheet with live conversion rates and regional adjustments', 'Built native iOS plugins, integrated managed Android plugins, and stood up backend telemetry services'] },
+  { id: 'exp-2', dates: 'Sep 2018 — Oct 2023', role: 'Founder', company: 'Omneity', loc: 'Delhi',
+    focus: ['Game Development', 'Engineering'],
+    lines: ['Solo-built and released two games — "Boxes of Trouble" and "BTC King" — handling every part of development from a custom JS game engine to release', 'Built and led a 10-person revshare team (artists, writers, composers) as sole programmer and project lead for "Chalk Stories — Lonely Oni," including hiring', 'Learned Unity editor scripting from scratch to build custom tools — a node-based dialogue editor and a runtime spline tool — years before doing the same professionally'] },
+  { id: 'exp-3', dates: 'Oct 2021 — Dec 2021', role: 'Senior Unity Developer', company: 'LILA Games', loc: 'Bengaluru',
+    focus: ['Game Development', 'Multiplayer'],
+    lines: ['Implemented networked loot/storage containers and doors, resolving multiplayer contention and network-latency edge cases', "Built a reusable proximity-detection system powering a lightweight HUD for nearby interactables, cached with non-allocating methods for per-frame performance", "Researched and implemented Unity's then-immature new Input System for mobile, mapping on-screen controls with deadzone and sticky-run modifiers"] },
+  { id: 'exp-4', dates: 'Aug 2020 — Oct 2021', role: 'Senior Engineer I / Engineer II', company: 'Aristocrat Leisure', loc: 'Gurugram',
+    focus: ['Game Development', 'Tooling'],
+    lines: ['Delivered 10+ prototypes/MVPs and math simulations for slot games in Unity and WPF', "As the team's first Unity-experienced developer, ran onboarding training and helped improve the studio's early-stage Unity framework", 'Earned an early promotion to Senior Engineer I in recognition of this work'] },
+  { id: 'exp-5', dates: 'May 2017 — Sep 2018', role: 'Software Engineer', company: 'Google (via GlobalLogic)', loc: 'Gurugram',
+    focus: ['Process & Tools', 'Leadership'],
+    lines: ['Launched 10–15+ Google Search features (including Knowledge Graph work), covering ETL, data pipelines, A/B testing, and configuration management', "Became the team's youngest-ever SME, then co-founded and trained a ~20-person cross-team task force for A/B test evaluation and issue mitigation", 'Helped resolve a major production incident — a Knowledge Graph break in test — by deep-diving Borg (now Kubernetes) machine logs with the team over several days'] },
+  { id: 'exp-6', dates: 'May 2016 — Feb 2017', role: 'Software Engineer', company: 'Dquip', loc: 'Mumbai (Remote)',
+    focus: ['Engineering', 'Automation'],
+    lines: ['Built 8–10 CRM modules as the sole backend developer (PHP/LAMP), including an email module that let users manage Gmail/Outlook/etc. accounts directly inside the CRM, built end-to-end', 'Unprompted, built a PHP templating engine to replace repetitive DB→BE→FE mapping and duplicated validation logic, cutting backend work by roughly 30%', 'The templating work and email module put me on a fast-track toward leading the tech team — before I moved on'] },
+  { id: 'exp-7', dates: 'Feb — Mar 2016', role: 'Software Engineer (Intern)', company: 'Teamhood · Google Campus', loc: 'Madrid (Remote)',
+    focus: ['Engineering'], lines: ['Contributed as a software engineer during an early-career internship'] },
+  { id: 'exp-8', dates: 'May — Jun 2015', role: 'Full-Stack Developer (Intern)', company: 'Sanjeev Verma Associates', loc: 'Delhi',
+    focus: ['Engineering'], lines: ['First professional experience, working full-stack across a small web application'] },
+];
