@@ -6,7 +6,7 @@
    ============================================================ */
 const HERO_STATS = [
   { from: 0, target: 8, format: n => `${n}+`, label: 'years in games' },
-  { from: 0, target: 20, format: n => `${n}+`, label: 'shipped titles &amp; tools' },
+  { from: 0, target: 20, format: n => `${n}+`, label: 'games &amp; tools built' },
   { from: 0, target: 7, format: n => `${n}`, label: 'studios &amp; companies' },
   { from: 100, target: 2, format: n => `Top ${n}%`, label: 'globally on CodinGame' },
 ];
