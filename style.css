@@ -82,6 +82,74 @@ html[data-theme="arcade"] {
   --accent-border: rgba(139, 124, 246, 0.38);
 }
 
+/* --- Machina: industrial iron + muted copper --- */
+html[data-theme="machina"] {
+  --bg: #121315;
+  --bg-alt: #181a1d;
+  --surface: #1f2125;
+  --surface-2: #27292e;
+  --border: #32353c;
+  --border-soft: #222429;
+  --text: #e2e4e9;
+  --text-dim: #9095a0;
+  --text-faint: #5f636e;
+  --accent: #c48464;
+  --accent-ink: #1a0f0a;
+  --accent-soft: rgba(196, 132, 100, 0.10);
+  --accent-border: rgba(196, 132, 100, 0.35);
+}
+
+/* --- Glacier: soft gray + dusty slate blue --- */
+html[data-theme="glacier"] {
+  --bg: #f3f4f6;
+  --bg-alt: #e9ebef;
+  --surface: #ffffff;
+  --surface-2: #dfe2e6;
+  --border: #cbd0d8;
+  --border-soft: #dbe0e7;
+  --text: #1e242b;
+  --text-dim: #535e6c;
+  --text-faint: #8894a3;
+  --accent: #568198;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(86, 129, 152, 0.10);
+  --accent-border: rgba(86, 129, 152, 0.35);
+}
+
+/* --- Covenant: dark grape charcoal + dusty burgundy --- */
+html[data-theme="covenant"] {
+  --bg: #0e0d0f;
+  --bg-alt: #151318;
+  --surface: #1d1a22;
+  --surface-2: #26222d;
+  --border: #35303e;
+  --border-soft: #211d29;
+  --text: #ede9f2;
+  --text-dim: #9992a3;
+  --text-faint: #605a69;
+  --accent: #a95a66;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(169, 90, 102, 0.10);
+  --accent-border: rgba(169, 90, 102, 0.35);
+}
+
+/* --- Dusk: deep twilight slate + muted periwinkle --- */
+html[data-theme="dusk"] {
+  --bg: #0f1015;
+  --bg-alt: #15171e;
+  --surface: #1c1f28;
+  --surface-2: #242834;
+  --border: #313747;
+  --border-soft: #20242f;
+  --text: #eaecf0;
+  --text-dim: #989eb0;
+  --text-faint: #606678;
+  --accent: #7c8ba1;
+  --accent-ink: #11141a;
+  --accent-soft: rgba(124, 139, 161, 0.10);
+  --accent-border: rgba(124, 139, 161, 0.35);
+}
+
 /* ============================================================
    RESET
    ============================================================ */
