@@ -1,7 +1,7 @@
 /* ============================================================
    EXPERIENCE (condensed timeline)
    ============================================================ */
-const TIMELINE = [
+export const TIMELINE = [
   { id: 'exp-0', dates: 'Jun 2024 — Present', role: 'Senior Technical Lead', company: 'Aristocrat Leisure', loc: 'Noida',
     focus: ['Automation & Tooling', 'Leadership'],
     lines: ['Initiated and led a 5-person effort building an internal Unity framework — templating, plugin system, and gameplay APIs — to cut repetitive setup work across future titles', 'Contributed to 7+ social slot titles and led one end-to-end, before the studio was shut down in Dec 2025 and I transferred to a new team building iGaming slots', 'Mentor junior developers, run milestone planning, and drive code review and workflow improvements across the team'] },

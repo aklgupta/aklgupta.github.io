@@ -1,7 +1,7 @@
 /* ============================================================
    STORY MODAL ("How I Work — the longer version")
    ============================================================ */
-const STORY_MODAL = {
+export const STORY_MODAL = {
   eyebrow: 'How I Work',
   title: 'The longer version',
   html: `

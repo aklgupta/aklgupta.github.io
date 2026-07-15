@@ -1,13 +1,13 @@
 /* ============================================================
    RECOGNITION
    ============================================================ */
-const HIGHLIGHTS = [
+export const HIGHLIGHTS = [
   { icon: 'fa-solid fa-trophy', text: '"BTC King" hit itch.io\'s front page for two weeks — solo-built.' },
   { icon: 'fa-solid fa-medal', text: 'Top 2% globally, top 0.3% nationally on CodinGame.com.' },
   { icon: 'fa-solid fa-star', text: 'Co-founded and trained a ~20-person task force inside Google Search.' },
 ];
 
-const RECOGNITION_MODAL = {
+export const RECOGNITION_MODAL = {
   eyebrow: 'Recognition',
   title: 'Achievements, education & certifications',
   html: `

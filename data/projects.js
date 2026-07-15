@@ -4,7 +4,7 @@
    an image under assets/projects/). If omitted, the card falls
    back to a plain text tile — see renderProjectThumb() in script.js.
    ============================================================ */
-const FEATURED_PROJECTS = [
+export const FEATURED_PROJECTS = [
   {
     id: 'proj-horrorisland', name: 'HorrorIsland', status: 'dev',
     hook: 'Solo-programmed horror game, upcoming on Steam.',
@@ -64,7 +64,7 @@ const FEATURED_PROJECTS = [
   },
 ];
 
-const STATUS_META = {
+export const STATUS_META = {
   released: { label: 'Released', cls: 'status-released' },
   dev: { label: 'In Development', cls: 'status-dev' },
   proto: { label: 'Prototype', cls: 'status-proto' },
@@ -73,7 +73,7 @@ const STATUS_META = {
   experimental: { label: 'Experimental', cls: 'status-experimental' },
 };
 
-const MORE_PROJECTS = [
+export const MORE_PROJECTS = [
   { name: 'Mirror Runner', status: 'released', desc: 'Hyper-casual Android runner — controls two characters at once via gyroscope, dodging obstacles together.' },
   { name: 'Robo Killer', status: 'proto', desc: 'Single-level 3D FPS developed in Unity for PC.' },
   { name: 'Chalk Stories — Lonely Oni', status: 'hiatus', desc: 'Narrative-driven top-down RPG for PC — on hold since the team disbanded.' },

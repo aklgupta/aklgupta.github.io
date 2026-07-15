@@ -1,7 +1,7 @@
 /* ============================================================
    CASE STUDIES ("Problem Solving" section)
    ============================================================ */
-const CASE_STUDIES = [
+export const CASE_STUDIES = [
   {
     id: 'case-0', tag: 'Aristocrat Leisure',
     title: 'A framework for a team that ran out of time',

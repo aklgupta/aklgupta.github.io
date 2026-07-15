@@ -1,7 +1,7 @@
 /* ============================================================
    SKILLS
    ============================================================ */
-const SKILL_GROUPS = [
+export const SKILL_GROUPS = [
   { title: 'Game Development & Engines', items: ['Unity 2D/3D', 'C# / .NET', 'ECS / DOTS', 'Burst & Jobs System', 'ScriptableObjects', 'Addressables & Asset Bundles', 'Prefabs & Scene Management', 'Input System', 'URP / HDRP', 'Cinemachine', 'Unity Timeline', 'Animation Systems', 'Inverse Kinematics (IK)', 'UI (uGUI / UI Toolkit / IMGUI)', 'Physics 2D/3D', 'DoTween', 'Godot', 'GDScript'] },
   { title: 'Systems, Pipelines & Automation', items: ['CI/CD (Jenkins, GitHub Actions)', 'Build Pipelines', 'Editor Scripting & Custom Tools', 'IL2CPP / AOT / Code Stripping', 'Native Plugin Development', 'Steam SDK Integration', 'Automated & Unit Testing', 'Python & Shell Scripting', 'Internal Framework Development'] },
   { title: 'Multiplayer & Backend', items: ['Photon / Photon Fusion', 'Nakama', 'Netcode & Network Programming', 'Client-Server Architecture', 'REST APIs', 'TCP / UDP / Sockets', 'Firebase', 'Telemetry (Adjust, AppLovin, Unity Ads)', 'LiveOps'] },
@@ -10,7 +10,7 @@ const SKILL_GROUPS = [
   { title: 'Ways of Working', items: ['Agile / Scrum', 'Technical Leadership & Mentoring', 'Cross-Functional Collaboration', 'Documentation', 'Rapid Prototyping'] },
 ];
 
-const EXTRA_KEYWORDS = [
+export const EXTRA_KEYWORDS = [
   'Assembly Definitions (asmdef)', 'Remote Config', 'PlayerPrefs', 'LOD', 'Navmesh & Pathfinding',
   'Finite State Machines (FSM)', 'Behaviour Trees', 'Decision Trees', 'Event-Driven Programming',
   'Reactive Programming', 'A/B Testing', 'Inversion of Control (IoC)', 'UniTask / UniRx', 'WebSockets',
@@ -28,7 +28,7 @@ const EXTRA_KEYWORDS = [
 // pill's own display label reads differently. Built from Akhil's original,
 // deliberately duplicate-heavy keyword list, plus common recruiter/hiring
 // manager phrasing added on top.
-const SKILL_SYNONYMS = {
+export const SKILL_SYNONYMS = {
   'Unity 2D/3D': ['unity', 'unity engine', 'unity game engine', 'unity 2d', 'unity 2d engine', 'unity 2d game engine', 'unity2d', 'unity 3d', 'unity 3d engine', 'unity 3d game engine', 'unity3d', 'unity dev', 'unity developer'],
   'C# / .NET': ['c#', 'c#/.net', '.net', 'csharp', 'c sharp', 'dotnet', 'dot net'],
   'ECS / DOTS': ['ecs', 'dots', 'unity dots', 'data-oriented technology stack', 'data oriented tech stack', 'entity component system'],
