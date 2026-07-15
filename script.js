@@ -14,7 +14,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 /* ============================================================
    THEMES
    ============================================================ */
-function updateFavicon(themeId) {
+function updateFavicon() {
   const styles = getComputedStyle(document.documentElement);
   const bg = styles.getPropertyValue('--bg').trim();
   const accent = styles.getPropertyValue('--accent').trim();
@@ -48,7 +48,7 @@ function updateFavicon(themeId) {
 function applyTheme(id) {
   document.documentElement.setAttribute('data-theme', id);
   document.querySelectorAll('.theme-dot').forEach(d => d.classList.toggle('active', d.dataset.theme === id));
-  updateFavicon(id);
+  updateFavicon();
   try { localStorage.setItem('portfolio-theme', id); } catch (e) {}
 }
 
