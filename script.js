@@ -4,9 +4,38 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 /* ============================================================
    THEMES
    ============================================================ */
+function updateFavicon(themeId) {
+  const theme = THEMES.find(t => t.id === themeId) || THEMES[0];
+  
+  // A clean, geometric "A" inside a premium game-studio-style rounded card (squircle)
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+      <!-- Rounded Background Card -->
+      <rect x="32" y="32" width="448" height="448" rx="110" fill="${theme.bg}" stroke="${theme.border}" stroke-width="16"/>
+      
+      <!-- Stylized geometric "A" using evenodd fill rule for a clean vector cutout -->
+      <path fill-rule="evenodd" d="M 235,120 L 277,120 L 392,392 L 324,392 L 294,320 L 218,320 L 188,392 L 120,392 Z M 256,180 L 232,275 L 280,275 Z" fill="${theme.swatch}"/>
+    </svg>
+  `.trim();
+  
+  // Safely encode the SVG to a data URL string
+  const svgUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  
+  // Find or dynamically create the link element in the document head
+  let link = document.querySelector("link[rel~='icon']");
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+  }
+  link.type = 'image/svg+xml';
+  link.href = svgUrl;
+}
+
 function applyTheme(id) {
   document.documentElement.setAttribute('data-theme', id);
   document.querySelectorAll('.theme-dot').forEach(d => d.classList.toggle('active', d.dataset.theme === id));
+  updateFavicon(id);
   try { localStorage.setItem('portfolio-theme', id); } catch (e) {}
 }
 
