@@ -6,12 +6,14 @@
    ============================================================ */
 export const FEATURED_PROJECTS = [
   {
-    id: 'proj-horrorisland', name: 'HorrorIsland', status: 'dev',
+    id: 'proj-greywake', name: 'GreyWake: Project Somnium', status: 'dev',
     hook: 'Solo-programmed horror game, upcoming on Steam.',
     desc: "An upcoming 3D horror game for Steam — inspired by Resident Evil, Silent Hill, and Amnesia — built in Unity within a 4-person indie team. I'm the only programmer, owning gameplay mechanics, core systems, NPC/enemy AI, the build pipeline, Steam SDK integration, and a plug-and-play save/load system with in-editor data protection and auto-persistent runtime IDs for ScriptableObjects — while also contributing to game design, project management, and overall direction. Tentative release: October 2026.",
     tags: ['Horror', 'Solo Programmer', 'NPC AI', 'Save Systems'],
-    thumb: 'assets/projects/horrorisland.jpg',
-    links: []
+    thumb: 'assets/projects/greywake.jpg',
+    links: [
+      { icon: 'fa-brands fa-steam', label: 'Steam', url: 'https://store.steampowered.com/app/4931620/GreyWake_Project_Somnium/?beta=1' },
+    ]
   },
   {
     id: 'proj-kurukshetra', name: 'Kurukshetra: Ascension', status: 'released',
@@ -30,7 +32,7 @@ export const FEATURED_PROJECTS = [
     hook: 'NFL Slots, Heart of Vegas, Lightning Link & Cashman Casino — 10M+ downloads each.',
     desc: "A portfolio of mobile social slot games at Aristocrat, spanning two stints. As a slot prototype developer in my first stint, I worked on Heart of Vegas, Lightning Link, and Cashman Casino — each with 10M+ downloads and ranking among the top social slots. In my current stint, I'm a full Unity developer on NFL Slots, an officially NFL-partnered title.",
     tags: ['Slots', 'F2P', 'LiveOps'],
-    thumb: 'assets/projects/aristocrat-slots.jpg',
+    thumb: 'assets/projects/nfl.webp',
     links: [
       { icon: 'fa-brands fa-google-play', label: 'NFL Slots (Google Play)', url: 'https://play.google.com/store/apps/details?id=com.productmadness.nflslots' },
       { icon: 'fa-brands fa-app-store-ios', label: 'Heart of Vegas (App Store)', url: 'https://apps.apple.com/us/app/heart-of-vegas-casino-slots/id785537179' },
@@ -51,7 +53,7 @@ export const FEATURED_PROJECTS = [
     hook: 'Solo-built browser game, itch.io front page.',
     desc: 'A browser game solo-built and published on itch.io, featured on the front page for two weeks with ongoing player engagement.',
     tags: ['Web', 'Solo Dev'],
-    thumb: 'assets/projects/btc-king.jpg',
+    thumb: 'assets/projects/btcking.png',
     links: [{ icon: 'fa-brands fa-itch-io', label: 'itch.io', url: 'https://aklgupta.itch.io/btc-king' }]
   },
   {
