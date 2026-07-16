@@ -4,6 +4,14 @@
    an image under assets/projects/). If omitted, the card falls
    back to a plain text tile — see renderProjectThumb() in script.js.
    ============================================================ */
+
+const LINK_TYPE = {
+  STEAM: { title: 'Steam', icon: 'fa-brands fa-steam' },
+  GOOGL: { title: 'Google Play', icon: 'fa-brands fa-google-play' },
+  APPLE: { title: 'App Store', icon: 'fa-brands fa-app-store-ios' },
+  ITCH: { title: 'itch.io', icon: 'fa-brands fa-itch-io' },
+}
+
 export const FEATURED_PROJECTS = [
   {
     id: 'proj-greywake', name: 'GreyWake: Project Somnium', status: 'dev',
@@ -12,7 +20,7 @@ export const FEATURED_PROJECTS = [
     tags: ['Horror', 'Solo Programmer', 'NPC AI', 'Save Systems'],
     thumb: 'assets/projects/greywake.jpg',
     links: [
-      { icon: 'fa-brands fa-steam', label: 'Steam', url: 'https://store.steampowered.com/app/4931620/GreyWake_Project_Somnium/?beta=1' },
+      { type: LINK_TYPE.STEAM, url: 'https://store.steampowered.com/app/4931620/GreyWake_Project_Somnium/' },
     ]
   },
   {
@@ -22,9 +30,9 @@ export const FEATURED_PROJECTS = [
     thumb: 'assets/projects/kurukshetra.jpg',
     tags: ['Multiplayer', 'CCG', 'LiveOps', 'Object Pooling', 'Addressables'],
     links: [
-      { icon: 'fa-brands fa-google-play', label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.StudioSirah.KurukshetraAscension' },
-      { icon: 'fa-brands fa-app-store-ios', label: 'App Store', url: 'https://apps.apple.com/in/app/kurukshetra-ascension/id1601430224' },
-      { icon: 'fa-brands fa-steam', label: 'Steam', url: 'https://store.steampowered.com/app/1857540/Kurukshetra_Ascension/' },
+      { type: LINK_TYPE.GOOGL, url: 'https://play.google.com/store/apps/details?id=com.StudioSirah.KurukshetraAscension' },
+      { type: LINK_TYPE.APPLE, url: 'https://apps.apple.com/in/app/kurukshetra-ascension/id1601430224' },
+      { type: LINK_TYPE.STEAM, url: 'https://store.steampowered.com/app/1857540/Kurukshetra_Ascension/' },
     ]
   },
   {
@@ -34,10 +42,10 @@ export const FEATURED_PROJECTS = [
     tags: ['Slots', 'F2P', 'LiveOps'],
     thumb: 'assets/projects/nfl.webp',
     links: [
-      { icon: 'fa-brands fa-google-play', label: 'NFL Slots (Google Play)', url: 'https://play.google.com/store/apps/details?id=com.productmadness.nflslots' },
-      { icon: 'fa-brands fa-app-store-ios', label: 'Heart of Vegas (App Store)', url: 'https://apps.apple.com/us/app/heart-of-vegas-casino-slots/id785537179' },
-      { icon: 'fa-brands fa-google-play', label: 'Lightning Link (Google Play)', url: 'https://play.google.com/store/apps/details?id=com.productmadness.lightninglink&hl=en_GB' },
-      { icon: 'fa-brands fa-app-store-ios', label: 'Cashman Casino (App Store)', url: 'https://apps.apple.com/us/app/cashman-casino-slots-games/id1123582513' },
+      { type: LINK_TYPE.GOOGL, label: 'NFL Slots', url: 'https://play.google.com/store/apps/details?id=com.productmadness.nflslots' },
+      { type: LINK_TYPE.APPLE, label: 'Heart of Vegas', url: 'https://apps.apple.com/us/app/heart-of-vegas-casino-slots/id785537179' },
+      { type: LINK_TYPE.GOOGL, label: 'Lightning Link', url: 'https://play.google.com/store/apps/details?id=com.productmadness.lightninglink&hl=en_GB' },
+      { type: LINK_TYPE.APPLE, label: 'Cashman Casino', url: 'https://apps.apple.com/us/app/cashman-casino-slots-games/id1123582513' },
     ]
   },
   {
@@ -46,7 +54,7 @@ export const FEATURED_PROJECTS = [
     desc: 'A multiplayer social FPS for mobile by LILA Games, built in Unity using DOTS/ECS and Photon Fusion for real-time networked gameplay.',
     tags: ['FPS', 'DOTS/ECS', 'Multiplayer'],
     thumb: 'assets/projects/black.jpg',
-    links: [{ icon: 'fa-brands fa-google-play', label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.lilagames.black' }]
+    links: [{ type: LINK_TYPE.GOOGL, url: 'https://play.google.com/store/apps/details?id=com.lilagames.black' }]
   },
   {
     id: 'proj-btcking', name: 'BTC King', status: 'released',
@@ -54,7 +62,7 @@ export const FEATURED_PROJECTS = [
     desc: 'A browser game solo-built and published on itch.io, featured on the front page for two weeks with ongoing player engagement.',
     tags: ['Web', 'Solo Dev'],
     thumb: 'assets/projects/btcking.png',
-    links: [{ icon: 'fa-brands fa-itch-io', label: 'itch.io', url: 'https://aklgupta.itch.io/btc-king' }]
+    links: [{ type: LINK_TYPE.ITCH, url: 'https://aklgupta.itch.io/btc-king' }]
   },
   {
     id: 'proj-lighthouse', name: 'The Lighthouse', status: 'dev',

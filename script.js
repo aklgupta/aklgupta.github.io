@@ -198,6 +198,14 @@ function renderProjectThumb(p) {
     : `<span>${p.name}</span>`;
 }
 
+function getLinkLabel(l) {
+  return `${l.label ? l.label + ' (' : ''}${l.type.title}${l.label ? ')' : ''}`;
+}
+
+function renderLink(l) {
+  return `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.type.icon}"></i> ${getLinkLabel(l)}</a>`;
+}
+
 document.getElementById('project-grid').innerHTML = FEATURED_PROJECTS.map(p => `
   <div class="project-card">
     <div class="project-thumb${p.thumb ? ' has-image' : ''}">${renderProjectThumb(p)}</div>
@@ -210,7 +218,7 @@ document.getElementById('project-grid').innerHTML = FEATURED_PROJECTS.map(p => `
       <div class="project-footer">
         <div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
         <div class="project-actions">
-          <div class="project-links">${p.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.icon}"></i></a>`).join('')}</div>
+          <div class="project-links">${p.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.type.icon}"></i></a>`).join('')}</div>
           <button class="project-details-btn" data-modal="${p.id}">Details</button>
         </div>
       </div>
@@ -225,7 +233,7 @@ FEATURED_PROJECTS.forEach(p => {
     html: `
       <p>${p.desc}</p>
       <div class="modal-tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
-      ${p.links.length ? `<div class="modal-links">${p.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.icon}"></i> ${l.label}</a>`).join('')}</div>` : ''}
+      ${p.links.length ? `<div class="modal-links">${p.links.map(l => renderLink(l)).join('')}</div>` : ''}
     `
   };
 });
