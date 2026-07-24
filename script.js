@@ -7,6 +7,7 @@ import { CASE_STUDIES } from "./data/case-studies.js";
 import { STORY_MODAL } from "./data/story.js";
 import { HERO_STATS } from "./data/hero.js";
 import { THEMES } from "./data/themes.js";
+import { CONTACT } from "./data/contact.js";
 
 document.getElementById('year').textContent = new Date().getFullYear();
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -467,3 +468,18 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => el.classList.add('in'), i * 90);
   });
 });
+
+/* ============================================================
+CONTACT DETAILS
+   ============================================================ */
+// Hero Landing quick links
+document.getElementById('hero-links').innerHTML = CONTACT.map(h => `
+  <a href="${h.link}" target="_blank" rel="noopener" aria-label="${h.title}"><i class="${h.icon}"></i></a>
+`).join('');
+
+// Main contacts
+document.getElementById('contact-links').innerHTML = CONTACT.map(h => `
+  <a href="${h.link}" target="_blank" rel="noopener" class="contact-card">
+    <i class="${h.icon}"></i><span>${h.title}</span>
+  </a>
+`).join('');
