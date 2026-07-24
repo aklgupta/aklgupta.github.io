@@ -4,7 +4,7 @@
 export const CASE_STUDIES = [
   {
     id: 'case-0', tag: 'Aristocrat Leisure',
-    title: 'A framework for a team that ran out of time',
+    title: 'Automating Game Creation with Unity Packages and Editor Tooling',
     hook: 'Five people, one ambitious framework - templating, tools, APIs.',
     problem: "Every new slot game meant developers and technical artists rebuilding the same scaffolding by hand — scenes, prefabs, state machines, boilerplate — with room for inconsistency and avoidable errors each time.",
     approach: "I initiated and led a 5-person effort (2 Unity/frontend developers, 2 ASP.NET backend developers, and a technical artist) building an internal framework on top of Aristocrat's existing tooling — part templating system, part plugin framework, part gameplay API and dev-tool suite. Game features were split into decoupled Unity packages, each bringing its own tools and setup wizard; a master wizard let a developer pick the modules a new game needed and have it configure the scenes, prefabs, ScriptableObjects, and state machines automatically, leaving only game-specific polish by hand. A parallel framework covered the backend side.",
@@ -33,7 +33,7 @@ export const CASE_STUDIES = [
     id: 'case-3', tag: 'LILA Games',
     title: 'Making shared loot and doors behave when three players grab them at once',
     hook: "Multiplayer means someone's always fighting over the same door.",
-    problem: "In a shared multiplayer hub supporting up to 20 players, loot containers and doors could be triggered by multiple nearby players at nearly the same instant — creating contention over who 'won' the interaction, and visible desync when network latency made an action look successful on one client but not others.",
+    problem: "In a shared multiplayer hub supporting several players, loot containers and doors could be triggered by multiple nearby players at nearly the same instant — creating contention over who 'won' the interaction, and visible desync when network latency made an action look successful on one client but not others.",
     approach: "Implemented networked, multiplayer-aware interaction handling for loot/storage containers and doors — resolving simultaneous-use contention and compensating for network delay to keep state consistent across clients.",
     result: "I joined in the project's first few months of what became a multi-year development cycle, so most of the game shipped after I moved on — but this interaction-handling layer was part of the shared-world foundation other systems built on top of.",
     tags: ['Multiplayer', 'Networking', 'Photon Fusion', 'Concurrency'],
