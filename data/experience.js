@@ -63,7 +63,7 @@ export const TIMELINE = [
     loc: "Gurugram",
     focus: ["Game Development", "Tooling"],
     lines: [
-      "Delivered 10+ prototypes/MVPs and math simulations for slot games in Unity and WPF",
+      "Delivered 5+ prototypes/MVPs and math simulations for slot games in Unity and WPF",
       "As the team's first Unity-experienced developer, ran onboarding training and helped improve the studio's early-stage Unity framework",
       "Earned an early promotion to Senior Engineer I in recognition of this work",
     ],

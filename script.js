@@ -133,7 +133,7 @@ document.getElementById('hero-stats').innerHTML = HERO_STATS.map((s, i) => `
 
 function countUp(el, from, target, format) {
   if (reduceMotion) { el.textContent = format(target); return; }
-  const duration = 900;
+  const duration = 1300;
   const start = performance.now();
   function tick(now) {
     const p = Math.min((now - start) / duration, 1);
@@ -181,9 +181,9 @@ CASE_STUDIES.forEach(c => {
     eyebrow: c.tag,
     title: c.title,
     html: `
-      <div class="m-line"><b>Problem</b><span>${c.problem}</span></div>
-      <div class="m-line"><b>Approach</b><span>${c.approach}</span></div>
-      <div class="m-line"><b>Result</b><span>${c.result}</span></div>
+      <div class="m-line"><b>Problem</b><p>${c.problem}</p></div>
+      <div class="m-line"><b>Approach</b><p>${c.approach}</p></div>
+      <div class="m-line"><b>Result</b><p>${c.result}</p></div>
       <div class="modal-tags">${c.tags.map(t => `<span>${t}</span>`).join('')}</div>
     `
   };
@@ -231,7 +231,8 @@ FEATURED_PROJECTS.forEach(p => {
     eyebrow: STATUS_META[p.status].label,
     title: p.name,
     html: `
-      <p>${p.desc}</p>
+      <div class="m-line"><b>Project</b><p>${p.desc}</p></div>
+      <div class="m-line"><b>Role</b><p>${p.contribution}</p></div>
       <div class="modal-tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
       ${p.links.length ? `<div class="modal-links">${p.links.map(l => renderLink(l)).join('')}</div>` : ''}
     `
