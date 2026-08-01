@@ -21,7 +21,7 @@ export const FEATURED_PROJECTS = [
     tags: ['Horror', 'Solo Programmer', 'NPC AI', 'Save Systems'],
     thumb: 'assets/projects/greywake.jpg',
     links: [
-      { type: LINK_TYPE.STEAM, url: 'https://store.steampowered.com/app/4931620/GreyWake_Project_Somnium/' },
+      { type: LINK_TYPE.STEAM, url: 'https://store.steampowered.com/app/4931620/GreyWake_Project_Somnium?utm_source=iolftpga.io.gh' },
     ]
   },
   {
