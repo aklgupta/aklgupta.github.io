@@ -16,8 +16,8 @@ export const FEATURED_PROJECTS = [
   {
     id: 'proj-greywake', name: 'GreyWake: Project Somnium', status: 'dev',
     hook: 'Solo-programmed horror game, upcoming on Steam.',
-    desc: "An upcoming 3D horror game for Steam, inspired by Resident Evil, Silent Hill, and Amnesia, built in Unity by a tiny indie team. Tentative release: October 2026.",
-    contribution: "I'm the only programmer, owning gameplay mechanics, core systems, NPC/enemy AI, the build pipeline, tools, Steam SDK integration, and a plug-and-play save/load system with in-editor data protection and auto-persistent runtime IDs for ScriptableObjects, while also contributing to game design, project management, and overall direction.",
+    desc: "An upcoming 3D horror game for Steam, built in Unity by a small indie team. Tentative release: Dec 2026.",
+    contribution: "I'm the only programmer in the team, owning gameplay mechanics, core systems, NPC/enemy AI, the build pipeline, tools, Steam SDK integration, and a plug-and-play save/load system with in-editor data protection and auto-persistent runtime IDs for ScriptableObjects, while also contributing to game design, project management, and overall direction.",
     tags: ['Horror', 'Solo Programmer', 'NPC AI', 'Save Systems'],
     thumb: 'assets/projects/greywake.jpg',
     links: [
